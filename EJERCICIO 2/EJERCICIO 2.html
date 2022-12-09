@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina</title>
+    <style>
+          body{
+         background-color: rosybrown;
+        }
+
+        .texto{
+    font-family: 'Times New Roman', Times, serif;
+}
+    </style>
+
+</head>
+<body>
+
+    <!-- asiganmos  el título con la etiqueta h1 -->
+   <h1> Practica 2</h1> 
+     
+   <!-- creamos la tablas con las respectivas etiquetas -->
+   <table>
+    <tr>
+         <!--  colocamos el titulo  -->
+        <th> N° de socio </th>
+        <th> Apellidos </th>
+        <th> Nombres </th>
+        <th> Ciudad </th>
+        <th> Fecha inicio </th>
+    </tr>
+
+     <!-- insertamos los datos -->
+    <tr>
+        <td> 2423 </td>
+        <td> Pérez Martínez </td>
+        <td> Juan José </td>
+        <td> Portoviejo </td>
+        <td> 2022-11-01</td>
+    </tr>
+ 
+    <tr>
+        <td>4438</td>
+        <td> Martínez Gómez </td>
+        <td> María Beatriz </td>
+        <td> Manta </td>
+        <td> 2022-01-01 </td>
+    </tr>
+
+    <tr>
+        <td> 4334 </td>
+        <td> Gómez Rodríguez </td>
+        <td> Carlos Alberto </td>
+        <td> Chone </td>
+        <td> 2022-05-01 </td>
+    </tr>
+
+    <tr>
+        <td> 4523 </td>
+        <td> Rodríguez Moreno </td>
+        <td> Sofía Ana </td>
+        <td> Bahía </td>
+        <td> 2022-02-01 </td>
+    </tr>
+
+   </table>
+
+    <h1> Formulario </h1>
+
+    <!--utilizamos  la etiqueta div con la creación de la clase para poner el color de fondo al formulario para despues ubicarla en el estilo.css-->
+
+    <div class="color-fondo">
+
+<!--realizamos el formulario con la información que se requiere en el ejercicio-->
+   <form action="guardar.php" method="post" enctype="multipart/form-data"> <br>
+    <input type="text" name="Nombres"> <br>
+    <input type="text" name="Apellidos"> <br>
+    <input type="text" name="Ciudad"> <br>
+    <input type="date" name="Fecha inicio"> <br>
+    <input type="file" name="foto"> <br>
+    <input type="file" name="Comprobante de pago"> <br>
+
+   </form>
+    
+</div>
+
+</body>
+
+</html>
+
+
